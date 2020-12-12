@@ -1,28 +1,31 @@
 #-----------------------------------------------------------
 # Vivado v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Dec 12 00:03:02 2020
-# Process ID: 4717
-# Current directory: /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1
-# Command line: vivado -log ultra96v2_oob_axi_uart16550_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra96v2_oob_axi_uart16550_1_0.tcl
-# Log file: /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/ultra96v2_oob_axi_uart16550_1_0.vds
-# Journal file: /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/vivado.jou
+# Start of session at: Sun Dec 13 01:49:36 2020
+# Process ID: 20408
+# Current directory: D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1
+# Command line: vivado.exe -log ultra96v2_oob_axi_uart16550_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra96v2_oob_axi_uart16550_1_0.tcl
+# Log file: D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/ultra96v2_oob_axi_uart16550_1_0.vds
+# Journal file: D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source ultra96v2_oob_axi_uart16550_1_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sho/work/vivado/avnet/hdl/IP'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/work/vivado_avnet/hdl/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.cache/ip 
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 6c5e51a8a10888e1) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips ultra96v2_oob_axi_uart16550_1_0]'
 Command: synth_design -top ultra96v2_oob_axi_uart16550_1_0 -part xczu3eg-sbva484-1-e -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4722 
+INFO: Helper process launched with PID 25472 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1405.715 ; gain = 41.730 ; free physical = 6978 ; free virtual = 11968
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 413.160 ; gain = 95.883
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_axi_uart16550_1_0' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/synth/ultra96v2_oob_axi_uart16550_1_0.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_axi_uart16550_1_0' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/synth/ultra96v2_oob_axi_uart16550_1_0.vhd:99]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
 	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
@@ -31,8 +34,8 @@ INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_axi_uart16550_1_0' [/home
 	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: integer 
 	Parameter C_HAS_EXTERNAL_RCLK bound to: 0 - type: integer 
 	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
-INFO: [Synth 8-3491] module 'axi_uart16550' declared at '/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4601' bound to instance 'U0' of component 'axi_uart16550' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/synth/ultra96v2_oob_axi_uart16550_1_0.vhd:203]
-INFO: [Synth 8-638] synthesizing module 'axi_uart16550' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4675]
+INFO: [Synth 8-3491] module 'axi_uart16550' declared at 'd:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4601' bound to instance 'U0' of component 'axi_uart16550' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/synth/ultra96v2_oob_axi_uart16550_1_0.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'axi_uart16550' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4675]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
 	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
@@ -41,7 +44,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_uart16550' [/home/sho/work/vivado/a
 	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: integer 
 	Parameter C_HAS_EXTERNAL_RCLK bound to: 0 - type: integer 
 	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
 	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000000011111 
@@ -50,7 +53,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/sho/work/vivado/a
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000011111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000011111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
 	Parameter C_IPIF_ABUS_WIDTH bound to: 13 - type: integer 
@@ -59,19 +62,19 @@ INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/sho/work/vivad
 	Parameter C_USE_WSTRB bound to: 1 - type: integer 
 	Parameter C_DPHASE_TIMEOUT bound to: 0 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
 	Parameter C_BUS_AWIDTH bound to: 5 - type: integer 
 	Parameter C_S_AXI_MIN_SIZE bound to: 31 - type: integer 
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000011111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-226] default block is never used [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-WARNING: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2447]
-WARNING: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2448]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (2#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (3#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'xuart' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4204]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+WARNING: [Synth 8-6014] Unused sequential element is_read_reg was removed.  [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2447]
+WARNING: [Synth 8-6014] Unused sequential element is_write_reg was removed.  [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2448]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (2#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (3#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'xuart' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4204]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
 	Parameter C_S_AXI_CLK_FREQ_HZ bound to: 100000000 - type: integer 
 	Parameter AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -80,68 +83,68 @@ INFO: [Synth 8-638] synthesizing module 'xuart' [/home/sho/work/vivado/avnet/hdl
 	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: bool 
 	Parameter C_HAS_EXTERNAL_RCLK bound to: 0 - type: bool 
 	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'uart16550' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2317]
+INFO: [Synth 8-638] synthesizing module 'uart16550' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2317]
 	Parameter C_IS_A_16550 bound to: 1 - type: bool 
 	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: bool 
 	Parameter C_S_AXI_CLK_FREQ_HZ bound to: 100000000 - type: integer 
 	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'xuart_tx_load_sm' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
-INFO: [Synth 8-226] default block is never used [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-256] done synthesizing module 'xuart_tx_load_sm' (4#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
+INFO: [Synth 8-638] synthesizing module 'xuart_tx_load_sm' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
+INFO: [Synth 8-226] default block is never used [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-256] done synthesizing module 'xuart_tx_load_sm' (4#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D1_INVERTED bound to: 1'b0 
 	Parameter IS_D2_INVERTED bound to: 1'b0 
 	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
 	Parameter SRVAL bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'BAUD_FF' to cell 'ODDRE1' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3383]
-INFO: [Synth 8-638] synthesizing module 'rx16550' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
-INFO: [Synth 8-226] default block is never used [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1760]
-INFO: [Synth 8-4471] merging register 'Character_received_reg' into 'Data_ready_reg' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1688]
-WARNING: [Synth 8-6014] Unused sequential element Character_received_reg was removed.  [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1688]
-INFO: [Synth 8-256] done synthesizing module 'rx16550' (5#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
-INFO: [Synth 8-638] synthesizing module 'tx16550' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
-INFO: [Synth 8-256] done synthesizing module 'tx16550' (6#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
-INFO: [Synth 8-638] synthesizing module 'tx_fifo_block' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
+INFO: [Synth 8-113] binding component instance 'BAUD_FF' to cell 'ODDRE1' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3383]
+INFO: [Synth 8-638] synthesizing module 'rx16550' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
+INFO: [Synth 8-226] default block is never used [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1760]
+INFO: [Synth 8-4471] merging register 'Character_received_reg' into 'Data_ready_reg' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1688]
+WARNING: [Synth 8-6014] Unused sequential element Character_received_reg was removed.  [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1688]
+INFO: [Synth 8-256] done synthesizing module 'rx16550' (5#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
+INFO: [Synth 8-638] synthesizing module 'tx16550' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
+INFO: [Synth 8-256] done synthesizing module 'tx16550' (6#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
+INFO: [Synth 8-638] synthesizing module 'tx_fifo_block' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
 	Parameter C_DWIDTH bound to: 8 - type: integer 
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
 	Parameter C_SIZE bound to: 5 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (7#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (7#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_DWIDTH bound to: 8 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (8#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (9#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'tx_fifo_block' (10#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
-INFO: [Synth 8-638] synthesizing module 'rx_fifo_block' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (8#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (9#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'tx_fifo_block' (10#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
+INFO: [Synth 8-638] synthesizing module 'rx_fifo_block' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'rx_fifo_control' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'rx_fifo_control' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-226] default block is never used [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:130]
-INFO: [Synth 8-256] done synthesizing module 'rx_fifo_control' (11#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-226] default block is never used [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'rx_fifo_control' (11#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
 	Parameter C_DWIDTH bound to: 11 - type: integer 
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
 	Parameter C_DEPTH bound to: 16 - type: integer 
 	Parameter C_DWIDTH bound to: 11 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (11#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (11#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'rx_fifo_block' (12#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
-INFO: [Synth 8-256] done synthesizing module 'uart16550' (13#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2317]
-INFO: [Synth 8-638] synthesizing module 'ipic_if' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3880]
-INFO: [Synth 8-256] done synthesizing module 'ipic_if' (14#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3880]
-INFO: [Synth 8-256] done synthesizing module 'xuart' (15#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4204]
-INFO: [Synth 8-256] done synthesizing module 'axi_uart16550' (16#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4675]
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_axi_uart16550_1_0' (17#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/synth/ultra96v2_oob_axi_uart16550_1_0.vhd:99]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (11#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (11#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'rx_fifo_block' (12#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
+INFO: [Synth 8-256] done synthesizing module 'uart16550' (13#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2317]
+INFO: [Synth 8-638] synthesizing module 'ipic_if' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3880]
+INFO: [Synth 8-256] done synthesizing module 'ipic_if' (14#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3880]
+INFO: [Synth 8-256] done synthesizing module 'xuart' (15#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4204]
+INFO: [Synth 8-256] done synthesizing module 'axi_uart16550' (16#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4675]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_axi_uart16550_1_0' (17#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/synth/ultra96v2_oob_axi_uart16550_1_0.vhd:99]
 WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[5]
 WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[4]
 WARNING: [Synth 8-3331] design rx_fifo_control has unconnected port Fcr[3]
@@ -208,7 +211,7 @@ WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_ARADD
 WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_ARADDR[6]
 WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_ARADDR[5]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1457.465 ; gain = 93.480 ; free physical = 6975 ; free virtual = 11967
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 475.211 ; gain = 157.934
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -221,10 +224,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1457.465 ; gain = 93.480 ; free physical = 6947 ; free virtual = 11938
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 475.211 ; gain = 157.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1457.465 ; gain = 93.480 ; free physical = 6947 ; free virtual = 11938
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 475.211 ; gain = 157.934
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -233,25 +236,25 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0_board.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0_board.xdc] for cell 'U0'
-Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0.xdc] for cell 'U0'
-Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0_board.xdc] for cell 'U0'
+Parsing XDC File [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_1_0/ultra96v2_oob_axi_uart16550_1_0.xdc] for cell 'U0'
+Parsing XDC File [D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2359.770 ; gain = 0.000 ; free physical = 6108 ; free virtual = 11101
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1396.684 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   ODDRE1 => OSERDESE3: 1 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2359.770 ; gain = 0.000 ; free physical = 6107 ; free virtual = 11100
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2359.770 ; gain = 0.000 ; free physical = 6106 ; free virtual = 11099
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1396.684 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1396.684 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2359.770 ; gain = 995.785 ; free physical = 6095 ; free virtual = 11088
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1396.684 ; gain = 1079.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -259,14 +262,14 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2359.770 ; gain = 995.785 ; free physical = 6094 ; free virtual = 11088
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1396.684 ; gain = 1079.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2359.770 ; gain = 995.785 ; free physical = 6097 ; free virtual = 11090
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1396.684 ; gain = 1079.406
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -295,7 +298,7 @@ INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because addre
 INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "fifo_full_p1" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fifo_full_p1" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3729]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3729]
 INFO: [Synth 8-5544] ROM "iir" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "fcr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
@@ -354,7 +357,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'receive_state_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'transmit_state_reg' using encoding 'sequential' in module 'tx16550'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 2359.770 ; gain = 995.785 ; free physical = 6062 ; free virtual = 11056
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1396.684 ; gain = 1079.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -548,8 +551,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'XUART_I_1/UART16550_I_1/wrN_d_reg' into 'XUART_I_1/UART16550_I_1/rdN_d_reg' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2594]
-INFO: [Synth 8-4471] merging register 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' into 'bus2ip_reset_int_core_reg' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2493]
+INFO: [Synth 8-4471] merging register 'XUART_I_1/UART16550_I_1/wrN_d_reg' into 'XUART_I_1/UART16550_I_1/rdN_d_reg' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/07cf/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2594]
+INFO: [Synth 8-4471] merging register 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' into 'bus2ip_reset_int_core_reg' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2493]
 WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_awaddr[12]
 WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_awaddr[11]
 WARNING: [Synth 8-3331] design axi_uart16550 has unconnected port s_axi_awaddr[10]
@@ -600,7 +603,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_L
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2359.770 ; gain = 995.785 ; free physical = 5998 ; free virtual = 10995
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1396.684 ; gain = 1079.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -612,13 +615,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:57 . Memory (MB): peak = 2594.605 ; gain = 1230.621 ; free physical = 6273 ; free virtual = 11268
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:48 . Memory (MB): peak = 1796.305 ; gain = 1479.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 2643.645 ; gain = 1279.660 ; free physical = 6213 ; free virtual = 11208
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 1856.598 ; gain = 1539.320
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -630,7 +633,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:59 . Memory (MB): peak = 2643.645 ; gain = 1279.660 ; free physical = 6201 ; free virtual = 11196
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 1856.598 ; gain = 1539.320
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -654,7 +657,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:59 . Memory (MB): peak = 2643.645 ; gain = 1279.660 ; free physical = 6186 ; free virtual = 11181
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1856.598 ; gain = 1539.320
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -667,7 +670,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:59 . Memory (MB): peak = 2643.645 ; gain = 1279.660 ; free physical = 6186 ; free virtual = 11181
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1856.598 ; gain = 1539.320
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -679,25 +682,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:59 . Memory (MB): peak = 2643.645 ; gain = 1279.660 ; free physical = 6184 ; free virtual = 11179
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1856.598 ; gain = 1539.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:59 . Memory (MB): peak = 2643.645 ; gain = 1279.660 ; free physical = 6184 ; free virtual = 11179
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1856.598 ; gain = 1539.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:59 . Memory (MB): peak = 2643.645 ; gain = 1279.660 ; free physical = 6183 ; free virtual = 11179
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1856.598 ; gain = 1539.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:59 . Memory (MB): peak = 2643.645 ; gain = 1279.660 ; free physical = 6183 ; free virtual = 11178
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1856.598 ; gain = 1539.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -766,34 +769,33 @@ Report Instance Areas:
 |20    |        xuart_tx_load_sm_1                 |xuart_tx_load_sm               |    29|
 +------+-------------------------------------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:59 . Memory (MB): peak = 2643.645 ; gain = 1279.660 ; free physical = 6183 ; free virtual = 11178
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1856.598 ; gain = 1539.320
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 42 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:43 . Memory (MB): peak = 2643.645 ; gain = 377.355 ; free physical = 6219 ; free virtual = 11214
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:59 . Memory (MB): peak = 2643.652 ; gain = 1279.660 ; free physical = 6218 ; free virtual = 11213
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1856.598 ; gain = 617.848
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1856.598 ; gain = 1539.320
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2675.660 ; gain = 0.000 ; free physical = 6147 ; free virtual = 11142
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1856.598 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   ODDRE1 => OSERDESE3: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-112 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+112 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:00 . Memory (MB): peak = 2675.660 ; gain = 1311.945 ; free physical = 6202 ; free virtual = 11197
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2675.660 ; gain = 0.000 ; free physical = 6202 ; free virtual = 11197
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:56 . Memory (MB): peak = 1856.598 ; gain = 1539.320
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1856.598 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/ultra96v2_oob_axi_uart16550_1_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ultra96v2_oob_axi_uart16550_1_0, cache-ID = 6c5e51a8a10888e1
+INFO: [Common 17-1381] The checkpoint 'D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/ultra96v2_oob_axi_uart16550_1_0.dcp' has been generated.
 INFO: [Coretcl 2-1174] Renamed 19 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2699.672 ; gain = 0.000 ; free physical = 6176 ; free virtual = 11172
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1856.598 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/ultra96v2_oob_axi_uart16550_1_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_axi_uart16550_1_0_synth_1/ultra96v2_oob_axi_uart16550_1_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ultra96v2_oob_axi_uart16550_1_0_utilization_synth.rpt -pb ultra96v2_oob_axi_uart16550_1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 12 00:04:14 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 13 01:50:43 2020...

@@ -3,7 +3,7 @@
 
 # XDC: imports/ultra96v2_oob/ultra96v2_oob.xdc
 
-# XDC: /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ultra96v2_oob.xdc
+# XDC: D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ultra96v2_oob.xdc
 
 # Block Designs: bd/ultra96v2_oob/ultra96v2_oob.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ultra96v2_oob || ORIG_REF_NAME==ultra96v2_oob} -quiet] -quiet

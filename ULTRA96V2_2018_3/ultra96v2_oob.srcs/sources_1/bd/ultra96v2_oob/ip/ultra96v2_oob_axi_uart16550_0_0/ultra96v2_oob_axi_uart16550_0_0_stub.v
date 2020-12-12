@@ -1,11 +1,11 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Sat Dec 12 00:04:12 2020
-// Host        : urashima-HP-ENVY-x360 running 64-bit Ubuntu 18.04.5 LTS
-// Command     : write_verilog -force -mode synth_stub -rename_top ultra96v2_oob_axi_uart16550_0_0 -prefix
-//               ultra96v2_oob_axi_uart16550_0_0_ ultra96v2_oob_axi_uart16550_1_0_stub.v
-// Design      : ultra96v2_oob_axi_uart16550_1_0
+// Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+// Date        : Sun Dec 13 01:51:38 2020
+// Host        : DESKTOP-N7LQT9C running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_uart16550_0_0/ultra96v2_oob_axi_uart16550_0_0_stub.v
+// Design      : ultra96v2_oob_axi_uart16550_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu3eg-sbva484-1-e
 // --------------------------------------------------------------------------------

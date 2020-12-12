@@ -1353,6 +1353,24 @@
         </spirit:parameters>
       </spirit:view>
       <spirit:view>
+        <spirit:name>xilinx_implementation</spirit:name>
+        <spirit:displayName>Implementation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:implementation</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_implementation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Fri Dec 11 15:00:22 UTC 2020</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:3661d7a9</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
         <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
         <spirit:displayName>Simulation</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
@@ -1363,7 +1381,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Dec 11 15:00:21 UTC 2020</spirit:value>
+            <spirit:value>Sat Dec 12 16:44:26 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -1383,29 +1401,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Dec 11 15:00:21 UTC 2020</spirit:value>
+            <spirit:value>Sat Dec 12 16:44:26 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:e6732613</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
-        <spirit:name>xilinx_implementation</spirit:name>
-        <spirit:displayName>Implementation</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:implementation</spirit:envIdentifier>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_implementation_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Dec 11 15:00:22 UTC 2020</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3661d7a9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1419,7 +1419,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Dec 11 15:03:01 UTC 2020</spirit:value>
+            <spirit:value>Sat Dec 12 16:51:05 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -5551,6 +5551,16 @@
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
+      <spirit:name>xilinx_implementation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>ultra96v2_oob_system_management_wiz_0_0_board.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+        <spirit:userFileType>USED_IN_board</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>design.dat</spirit:name>
@@ -5623,16 +5633,6 @@
       <spirit:file>
         <spirit:name>ultra96v2_oob_system_management_wiz_0_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_implementation_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>ultra96v2_oob_system_management_wiz_0_0_board.xdc</spirit:name>
-        <spirit:userFileType>xdc</spirit:userFileType>
-        <spirit:userFileType>USED_IN_board</spirit:userFileType>
-        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -12133,15 +12133,15 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.DATA_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd_and_user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.HAS_BRESP" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.HAS_BRESP" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.HAS_BURST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.HAS_CACHE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.HAS_LOCK" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.HAS_PROT" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.HAS_QOS" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.HAS_RRESP" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.HAS_WSTRB" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.HAS_RRESP" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.HAS_WSTRB" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.ID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.MAX_BURST_LENGTH" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE.NUM_READ_OUTSTANDING" xilinx:valueSource="auto" xilinx:valuePermission="bd_and_user"/>

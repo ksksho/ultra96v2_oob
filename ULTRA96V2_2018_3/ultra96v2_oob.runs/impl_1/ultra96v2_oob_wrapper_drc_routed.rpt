@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Sat Dec 12 03:20:12 2020
-| Host         : urashima-HP-ENVY-x360 running 64-bit Ubuntu 18.04.5 LTS
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Dec 13 01:54:57 2020
+| Host         : DESKTOP-N7LQT9C running 64-bit major release  (build 9200)
 | Command      : report_drc -file ultra96v2_oob_wrapper_drc_routed.rpt -pb ultra96v2_oob_wrapper_drc_routed.pb -rpx ultra96v2_oob_wrapper_drc_routed.rpx
 | Design       : ultra96v2_oob_wrapper
 | Device       : xczu3eg-sbva484-1-e

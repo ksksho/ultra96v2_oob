@@ -66,24 +66,24 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   create_project -in_memory -part xczu3eg-sbva484-1-e
-  set_property board_part_repo_paths {/home/sho/work/vivado/avnet/bdf} [current_project]
+  set_property board_part_repo_paths {D:/work/vivado_avnet/bdf} [current_project]
   set_property board_part em.avnet.com:ultra96v2:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.cache/wt [current_project]
-  set_property parent.project_path /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.xpr [current_project]
-  set_property ip_repo_paths /home/sho/work/vivado/avnet/hdl/IP [current_project]
+  set_property webtalk.parent_dir D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.cache/wt [current_project]
+  set_property parent.project_path D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.xpr [current_project]
+  set_property ip_repo_paths D:/work/vivado_avnet/hdl/IP [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.cache/ip [current_project]
+  set_property ip_output_repo D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/synth_1/ultra96v2_oob_wrapper.dcp
+  add_files -quiet D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/synth_1/ultra96v2_oob_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ultra96v2_oob.bd
+  add_files D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ultra96v2_oob.bd
   set_param project.isImplRun false
-  read_xdc /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/constrs_1/imports/ultra96v2_oob/ultra96v2_oob.xdc
-  read_xdc /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ultra96v2_oob.xdc
+  read_xdc D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/constrs_1/imports/ultra96v2_oob/ultra96v2_oob.xdc
+  read_xdc D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ultra96v2_oob.xdc
   set_param project.isImplRun true
   link_design -top ultra96v2_oob_wrapper -part xczu3eg-sbva484-1-e
   set_param project.isImplRun false
@@ -168,7 +168,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force ultra96v2_oob_wrapper.mmi }
-  write_bitstream -force ultra96v2_oob_wrapper.bit 
+  write_bitstream -force ultra96v2_oob_wrapper.bit -raw_bitfile
   catch { write_sysdef -hwdef ultra96v2_oob_wrapper.hwdef -bitfile ultra96v2_oob_wrapper.bit -meminfo ultra96v2_oob_wrapper.mmi -file ultra96v2_oob_wrapper.sysdef }
   catch {write_debug_probes -quiet -force ultra96v2_oob_wrapper}
   catch {file copy -force ultra96v2_oob_wrapper.ltx debug_nets.ltx}

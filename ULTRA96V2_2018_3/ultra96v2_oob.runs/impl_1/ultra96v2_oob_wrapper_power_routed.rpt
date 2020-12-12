@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Sat Dec 12 03:20:19 2020
-| Host             : urashima-HP-ENVY-x360 running 64-bit Ubuntu 18.04.5 LTS
+| Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date             : Sun Dec 13 01:55:03 2020
+| Host             : DESKTOP-N7LQT9C running 64-bit major release  (build 9200)
 | Command          : report_power -file ultra96v2_oob_wrapper_power_routed.rpt -pb ultra96v2_oob_wrapper_power_summary_routed.pb -rpx ultra96v2_oob_wrapper_power_routed.rpx
 | Design           : ultra96v2_oob_wrapper
 | Device           : xczu3eg-sbva484-1-e
@@ -54,13 +54,13 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.010 |        3 |       --- |             --- |
 | CLB Logic                |     0.004 |     6280 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     2459 |     70560 |            3.48 |
-|   Register               |    <0.001 |     2911 |    141120 |            2.06 |
+|   LUT as Logic           |     0.003 |     2465 |     70560 |            3.49 |
 |   LUT as Shift Register  |    <0.001 |       82 |     28800 |            0.28 |
+|   Register               |    <0.001 |     2911 |    141120 |            2.06 |
 |   LUT as Distributed RAM |    <0.001 |       56 |     28800 |            0.19 |
 |   CARRY8                 |    <0.001 |       18 |      8820 |            0.20 |
 |   Others                 |     0.000 |      173 |       --- |             --- |
-| Signals                  |     0.005 |     5087 |       --- |             --- |
+| Signals                  |     0.005 |     5091 |       --- |             --- |
 | I/O                      |     0.014 |       45 |        82 |           54.88 |
 | SYSMON                   |     0.005 |        1 |       --- |             --- |
 | PS8                      |     1.753 |        1 |       --- |             --- |

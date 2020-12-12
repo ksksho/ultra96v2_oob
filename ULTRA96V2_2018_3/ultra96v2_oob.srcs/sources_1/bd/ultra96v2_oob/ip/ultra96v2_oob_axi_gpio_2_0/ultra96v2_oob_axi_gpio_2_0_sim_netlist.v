@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Sat Dec 12 00:01:30 2020
-// Host        : urashima-HP-ENVY-x360 running 64-bit Ubuntu 18.04.5 LTS
+// Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+// Date        : Sun Dec 13 01:50:32 2020
+// Host        : DESKTOP-N7LQT9C running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_gpio_2_0/ultra96v2_oob_axi_gpio_2_0_sim_netlist.v
+//               D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_axi_gpio_2_0/ultra96v2_oob_axi_gpio_2_0_sim_netlist.v
 // Design      : ultra96v2_oob_axi_gpio_2_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/constrs_1/imports/ultra96v2_oob/ultra96v2_oob.xdc rfile:../../../ultra96v2_oob.srcs/constrs_1/imports/ultra96v2_oob/ultra96v2_oob.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ultra96v2_oob.xdc rfile:../../../../ultra96v2_oob.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/constrs_1/imports/ultra96v2_oob/ultra96v2_oob.xdc rfile:../../../ultra96v2_oob.srcs/constrs_1/imports/ultra96v2_oob/ultra96v2_oob.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ultra96v2_oob.xdc rfile:../../../../ultra96v2_oob.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN B7 [get_ports bt_ctsn]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

@@ -1707,7 +1707,7 @@ In FIFO mode, Transmitter FIFO and shift register are both empty.
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Dec 11 15:04:14 UTC 2020</spirit:value>
+            <spirit:value>Sat Dec 12 16:50:42 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -2697,7 +2697,7 @@ In FIFO mode, Transmitter FIFO and shift register are both empty.
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>The AXI Universal Asynchronous Receiver Transmitter (UART) 16550 connects to the AMBA® (Advance Microcontroller Bus Architecture) AXI (Advanced eXtensible Interface) and provides the controller interface for asynchronous serial data transfer</spirit:description>
+  <spirit:description>The AXI Universal Asynchronous Receiver Transmitter (UART) 16550 connects to the AMBAR (Advance Microcontroller Bus Architecture) AXI (Advanced eXtensible Interface) and provides the controller interface for asynchronous serial data transfer</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>C_EXTERNAL_XIN_CLK_HZ</spirit:name>

@@ -1,8 +1,8 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Sat Dec 12 00:02:34 2020
-// Host        : urashima-HP-ENVY-x360 running 64-bit Ubuntu 18.04.5 LTS
+// Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+// Date        : Sun Dec 13 01:50:35 2020
+// Host        : DESKTOP-N7LQT9C running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top ultra96v2_oob_PWM_w_Int_1_0 -prefix
 //               ultra96v2_oob_PWM_w_Int_1_0_ ultra96v2_oob_PWM_w_Int_0_0_sim_netlist.v
 // Design      : ultra96v2_oob_PWM_w_Int_0_0

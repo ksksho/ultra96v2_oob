@@ -1,43 +1,46 @@
 #-----------------------------------------------------------
 # Vivado v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Dec 12 00:01:44 2020
-# Process ID: 4399
-# Current directory: /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1
-# Command line: vivado -log ultra96v2_oob_system_management_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra96v2_oob_system_management_wiz_0_0.tcl
-# Log file: /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/ultra96v2_oob_system_management_wiz_0_0.vds
-# Journal file: /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/vivado.jou
+# Start of session at: Sun Dec 13 01:49:36 2020
+# Process ID: 12788
+# Current directory: D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1
+# Command line: vivado.exe -log ultra96v2_oob_system_management_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra96v2_oob_system_management_wiz_0_0.tcl
+# Log file: D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/ultra96v2_oob_system_management_wiz_0_0.vds
+# Journal file: D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source ultra96v2_oob_system_management_wiz_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sho/work/vivado/avnet/hdl/IP'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/work/vivado_avnet/hdl/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.cache/ip 
+WARNING: [IP_Flow 19-5242] IP Cache entry (cache-ID 3f926244c2d56630) does not have the required number of cached files and is not valid. Please delete this entry using the TCL command: 'config_ip_cache -remove [get_ips ultra96v2_oob_system_management_wiz_0_0]'
 Command: synth_design -top ultra96v2_oob_system_management_wiz_0_0 -part xczu3eg-sbva484-1-e -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4404 
+INFO: Helper process launched with PID 5232 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1407.988 ; gain = 17.730 ; free physical = 6986 ; free virtual = 11974
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 415.637 ; gain = 97.766
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.vhd:93]
 	Parameter C_INSTANCE bound to: ultra96v2_oob_system_management_wiz_0_0_axi_xadc - type: string 
 	Parameter C_FAMILY bound to: kintexu - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_INCLUDE_INTR bound to: 1 - type: integer 
 	Parameter C_SIM_MONITOR_FILE bound to: design.txt - type: string 
-INFO: [Synth 8-3491] module 'ultra96v2_oob_system_management_wiz_0_0_axi_xadc' declared at '/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_axi_xadc.vhd:142' bound to instance 'U0' of component 'ultra96v2_oob_system_management_wiz_0_0_axi_xadc' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.vhd:166]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_axi_xadc' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_axi_xadc.vhd:236]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_system_management_wiz_0_0_axi_xadc' declared at 'd:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_axi_xadc.vhd:142' bound to instance 'U0' of component 'ultra96v2_oob_system_management_wiz_0_0_axi_xadc' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_axi_xadc' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_axi_xadc.vhd:236]
 	Parameter C_INSTANCE bound to: ultra96v2_oob_system_management_wiz_0_0_axi_xadc - type: string 
 	Parameter C_FAMILY bound to: kintexu - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_INCLUDE_INTR bound to: 1 - type: integer 
 	Parameter C_SIM_MONITOR_FILE bound to: design.txt - type: string 
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_axi_lite_ipif' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_axi_lite_ipif.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_axi_lite_ipif' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_axi_lite_ipif.vhd:241]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
 	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000011111111111 
@@ -46,7 +49,7 @@ INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111100000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000001111111111111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000010000000000000000000000000000001000000000000000000000000000000000001 
 	Parameter C_FAMILY bound to: kintexu - type: string 
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_slave_attachment' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_slave_attachment.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_slave_attachment' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_slave_attachment.vhd:227]
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111100000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000001111111111111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000010000000000000000000000000000001000000000000000000000000000000000001 
 	Parameter C_IPIF_ABUS_WIDTH bound to: 13 - type: integer 
@@ -55,178 +58,178 @@ INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0
 	Parameter C_USE_WSTRB bound to: 1 - type: integer 
 	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
 	Parameter C_FAMILY bound to: kintexu - type: string 
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_address_decoder' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_address_decoder.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_address_decoder' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_address_decoder.vhd:176]
 	Parameter C_BUS_AWIDTH bound to: 11 - type: integer 
 	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 384'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000111111100000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000001111111111111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 96'b000000000000000000000000000010000000000000000000000000000001000000000000000000000000000000000001 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 6 - type: integer 
 	Parameter C_AW bound to: 11 - type: integer 
 	Parameter C_BAR bound to: 11'b00000000000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized0' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized0' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized0' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized1' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized0' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized1' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b001 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized1' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized2' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized1' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized2' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b010 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized2' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized3' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized2' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized3' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b011 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized3' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized4' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized3' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized4' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b100 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized4' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized5' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized4' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized5' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b101 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized5' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized6' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized5' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized6' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b110 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized6' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized7' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized6' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized7' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 3 - type: integer 
 	Parameter C_AW bound to: 3 - type: integer 
 	Parameter C_BAR bound to: 3'b111 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized7' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized8' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized7' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized8' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 5 - type: integer 
 	Parameter C_AW bound to: 11 - type: integer 
 	Parameter C_BAR bound to: 11'b00001000000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized8' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized9' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized8' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized9' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized9' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized10' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized9' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized10' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0001 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized10' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized11' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized10' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized11' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0010 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized11' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized12' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized11' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized12' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0011 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized12' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized13' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized12' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized13' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0100 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized13' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized14' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized13' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized14' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0101 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized14' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized15' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized14' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized15' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0110 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized15' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized16' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized15' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized16' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0111 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized16' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized17' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized16' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized17' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized17' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized18' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized17' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized18' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1001 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized18' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized19' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized18' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized19' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1010 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized19' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized20' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized19' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized20' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1011 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized20' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized21' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized20' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized21' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1100 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized21' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized22' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized21' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized22' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1101 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized22' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized23' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized22' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized23' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1110 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized23' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized24' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized23' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized24' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1111 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized24' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized25' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized24' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized25' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
 	Parameter C_AB bound to: 1 - type: integer 
 	Parameter C_AW bound to: 11 - type: integer 
 	Parameter C_BAR bound to: 11'b10000000000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized25' (1#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_address_decoder' (2#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_address_decoder.vhd:176]
-INFO: [Synth 8-226] default block is never used [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_slave_attachment.vhd:424]
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_slave_attachment' (3#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_slave_attachment.vhd:227]
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_axi_lite_ipif' (4#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_axi_lite_ipif.vhd:241]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_pselect_f__parameterized25' (1#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_address_decoder' (2#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_address_decoder.vhd:176]
+INFO: [Synth 8-226] default block is never used [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_slave_attachment.vhd:424]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_slave_attachment' (3#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_slave_attachment.vhd:227]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_axi_lite_ipif' (4#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/axi_lite_ipif_v1_31_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_axi_lite_ipif.vhd:241]
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_FAMILY bound to: kintexu - type: string 
@@ -234,8 +237,8 @@ INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wi
 	Parameter IP_INTR_NUM bound to: 18 - type: integer 
 	Parameter C_SIM_MONITOR_FILE bound to: design.txt - type: string 
 	Parameter MUX_ADDR_NO bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp' declared at '/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp.vhd:140' bound to instance 'AXI_SYSMONE1_CORE_I' of component 'ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_axi_xadc.vhd:690]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp.vhd:184]
+INFO: [Synth 8-3491] module 'ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp' declared at 'd:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp.vhd:140' bound to instance 'AXI_SYSMONE1_CORE_I' of component 'ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_axi_xadc.vhd:690]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp.vhd:184]
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 13 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_FAMILY bound to: kintexu - type: string 
@@ -320,10 +323,10 @@ INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0
 	Parameter SYSMON_VUSER2_MONITOR bound to: NONE - type: string 
 	Parameter SYSMON_VUSER3_BANK bound to: 0 - type: integer 
 	Parameter SYSMON_VUSER3_MONITOR bound to: NONE - type: string 
-INFO: [Synth 8-113] binding component instance 'inst_sysmon' to cell 'SYSMONE4' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp.vhd:1012]
-WARNING: [Synth 8-6014] Unused sequential element convst_reg_input_reg was removed.  [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp.vhd:550]
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp' (5#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp.vhd:184]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_soft_reset' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:142]
+INFO: [Synth 8-113] binding component instance 'inst_sysmon' to cell 'SYSMONE4' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp.vhd:1012]
+WARNING: [Synth 8-6014] Unused sequential element convst_reg_input_reg was removed.  [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp.vhd:550]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp' (5#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_soft_reset' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:142]
 	Parameter C_SIPIF_DWIDTH bound to: 32 - type: integer 
 	Parameter C_RESET_WIDTH bound to: 16 - type: integer 
 	Parameter INIT bound to: 1'b0 
@@ -332,130 +335,130 @@ INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:273]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_CE_INVERTED bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 	Parameter IS_S_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:296]
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_soft_reset' (6#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:142]
-INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_interrupt_control' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/interrupt_control_v2_01_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_interrupt_control.vhd:240]
+INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_soft_reset' (6#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/proc_common_v3_00_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_soft_reset.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_interrupt_control' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/interrupt_control_v2_01_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_interrupt_control.vhd:240]
 	Parameter C_NUM_CE bound to: 16 - type: integer 
 	Parameter C_NUM_IPIF_IRPT_SRC bound to: 1 - type: integer 
 	Parameter C_IP_INTR_MODE_ARRAY bound to: 576'b000000000000000000000000000001010000000000000000000000000000010100000000000000000000000000000101000000000000000000000000000001010000000000000000000000000000010100000000000000000000000000000101000000000000000000000000000001010000000000000000000000000000010100000000000000000000000000000101000000000000000000000000000001010000000000000000000000000000010100000000000000000000000000000101000000000000000000000000000001010000000000000000000000000000010100000000000000000000000000000101000000000000000000000000000001010000000000000000000000000000010100000000000000000000000000000101 
 	Parameter C_INCLUDE_DEV_PENCODER bound to: 0 - type: bool 
 	Parameter C_INCLUDE_DEV_ISC bound to: 0 - type: bool 
 	Parameter C_IPIF_DWIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_interrupt_control' (7#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/interrupt_control_v2_01_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_interrupt_control.vhd:240]
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_axi_xadc' (8#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_axi_xadc.vhd:236]
-INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0' (9#1) [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_interrupt_control' (7#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/interrupt_control_v2_01_a/hdl/src/vhdl/ultra96v2_oob_system_management_wiz_0_0_interrupt_control.vhd:240]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0_axi_xadc' (8#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_axi_xadc.vhd:236]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_oob_system_management_wiz_0_0' (9#1) [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.vhd:93]
 WARNING: [Synth 8-3331] design ultra96v2_oob_system_management_wiz_0_0_interrupt_control has unconnected port Bus2IP_Data[1]
 WARNING: [Synth 8-3331] design ultra96v2_oob_system_management_wiz_0_0_interrupt_control has unconnected port Bus2IP_Data[2]
 WARNING: [Synth 8-3331] design ultra96v2_oob_system_management_wiz_0_0_interrupt_control has unconnected port Bus2IP_Data[3]
@@ -558,7 +561,7 @@ WARNING: [Synth 8-3331] design ultra96v2_oob_system_management_wiz_0_0_xadc_core
 WARNING: [Synth 8-3331] design ultra96v2_oob_system_management_wiz_0_0_xadc_core_drp has unconnected port Bus2IP_Data[10]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1484.238 ; gain = 93.980 ; free physical = 6906 ; free virtual = 11897
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 510.840 ; gain = 192.969
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -571,10 +574,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1484.238 ; gain = 93.980 ; free physical = 6905 ; free virtual = 11895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 510.840 ; gain = 192.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1484.238 ; gain = 93.980 ; free physical = 6905 ; free virtual = 11895
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 510.840 ; gain = 192.969
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -583,28 +586,28 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_board.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_board.xdc] for cell 'U0'
-Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ultra96v2_oob_system_management_wiz_0_0_propImpl.xdc].
+Parsing XDC File [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_board.xdc] for cell 'U0'
+Parsing XDC File [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ultra96v2_oob_system_management_wiz_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/ultra96v2_oob_system_management_wiz_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2358.121 ; gain = 0.000 ; free physical = 5969 ; free virtual = 10959
-Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1395.016 ; gain = 0.000
+Parsing XDC File [D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2358.121 ; gain = 0.000 ; free physical = 5969 ; free virtual = 10960
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1395.016 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 17 instances were transformed.
   FDRSE => FDRSE (FDRE, LUT4, VCC): 17 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2358.121 ; gain = 0.000 ; free physical = 5969 ; free virtual = 10960
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2358.121 ; gain = 0.000 ; free physical = 5968 ; free virtual = 10959
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1395.016 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1395.016 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2358.121 ; gain = 967.863 ; free physical = 6021 ; free virtual = 11012
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1395.016 ; gain = 1077.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -612,14 +615,14 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2358.121 ; gain = 967.863 ; free physical = 6021 ; free virtual = 11012
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1395.016 ; gain = 1077.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 2358.121 ; gain = 967.863 ; free physical = 6021 ; free virtual = 11012
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1395.016 ; gain = 1077.145
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ultra96v2_oob_system_management_wiz_0_0_slave_attachment'
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -640,7 +643,7 @@ INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address si
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ultra96v2_oob_system_management_wiz_0_0_slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 2358.121 ; gain = 967.863 ; free physical = 6012 ; free virtual = 11003
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1395.016 ; gain = 1077.145
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -852,7 +855,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'bus2ip_reset_active_high_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_axi_xadc.vhd:638]
+INFO: [Synth 8-4471] merging register 'bus2ip_reset_active_high_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [d:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.srcs/sources_1/bd/ultra96v2_oob/ip/ultra96v2_oob_system_management_wiz_0_0/ultra96v2_oob_system_management_wiz_0_0_axi_xadc.vhd:638]
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_SYSMONE1_CORE_I/alarm_reg_reg[15] )
 INFO: [Synth 8-3886] merging instance 'U0/INTR_CTRLR_GEN_I.ip2bus_data_int_reg[13]' (FDR) to 'U0/INTR_CTRLR_GEN_I.ip2bus_data_int_reg[12]'
 INFO: [Synth 8-3886] merging instance 'U0/INTR_CTRLR_GEN_I.ip2bus_data_int_reg[12]' (FDR) to 'U0/INTR_CTRLR_GEN_I.ip2bus_data_int_reg[11]'
@@ -882,7 +885,7 @@ INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_a
 INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[29]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[30]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 2358.121 ; gain = 967.863 ; free physical = 5986 ; free virtual = 10979
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 1395.016 ; gain = 1077.145
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -894,13 +897,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:01:03 . Memory (MB): peak = 2592.957 ; gain = 1202.699 ; free physical = 6490 ; free virtual = 11482
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1793.688 ; gain = 1475.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:01:03 . Memory (MB): peak = 2638.996 ; gain = 1248.738 ; free physical = 6414 ; free virtual = 11406
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 1842.008 ; gain = 1524.137
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -912,7 +915,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:01:04 . Memory (MB): peak = 2638.996 ; gain = 1248.738 ; free physical = 6402 ; free virtual = 11395
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:13 . Memory (MB): peak = 1842.008 ; gain = 1524.137
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -936,7 +939,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:01:04 . Memory (MB): peak = 2638.996 ; gain = 1248.738 ; free physical = 6382 ; free virtual = 11374
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1842.008 ; gain = 1524.137
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -949,7 +952,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:01:04 . Memory (MB): peak = 2638.996 ; gain = 1248.738 ; free physical = 6381 ; free virtual = 11374
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1842.008 ; gain = 1524.137
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -961,25 +964,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:01:04 . Memory (MB): peak = 2638.996 ; gain = 1248.738 ; free physical = 6380 ; free virtual = 11372
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1842.008 ; gain = 1524.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:01:04 . Memory (MB): peak = 2638.996 ; gain = 1248.738 ; free physical = 6379 ; free virtual = 11371
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1842.008 ; gain = 1524.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:01:04 . Memory (MB): peak = 2638.996 ; gain = 1248.738 ; free physical = 6379 ; free virtual = 11371
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1842.008 ; gain = 1524.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:01:04 . Memory (MB): peak = 2638.996 ; gain = 1248.738 ; free physical = 6379 ; free virtual = 11371
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1842.008 ; gain = 1524.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1020,31 +1023,30 @@ Report Instance Areas:
 |8     |    SOFT_RESET_I                           |ultra96v2_oob_system_management_wiz_0_0_soft_reset        |    35|
 +------+-------------------------------------------+----------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:01:04 . Memory (MB): peak = 2638.996 ; gain = 1248.738 ; free physical = 6379 ; free virtual = 11371
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1842.008 ; gain = 1524.137
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 2638.996 ; gain = 374.855 ; free physical = 6416 ; free virtual = 11408
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:01:04 . Memory (MB): peak = 2639.004 ; gain = 1248.738 ; free physical = 6416 ; free virtual = 11408
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:59 . Memory (MB): peak = 1842.008 ; gain = 639.961
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:15 . Memory (MB): peak = 1842.008 ; gain = 1524.137
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2671.012 ; gain = 0.000 ; free physical = 6348 ; free virtual = 11340
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1842.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-147 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+147 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 2671.012 ; gain = 1281.023 ; free physical = 6400 ; free virtual = 11392
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2671.012 ; gain = 0.000 ; free physical = 6400 ; free virtual = 11392
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:17 . Memory (MB): peak = 1842.008 ; gain = 1524.137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1842.008 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/ultra96v2_oob_system_management_wiz_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ultra96v2_oob_system_management_wiz_0_0, cache-ID = 3f926244c2d56630
+INFO: [Common 17-1381] The checkpoint 'D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/ultra96v2_oob_system_management_wiz_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2695.023 ; gain = 0.000 ; free physical = 6419 ; free virtual = 11413
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1842.008 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/sho/work/vivado/avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/ultra96v2_oob_system_management_wiz_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/work/vivado_avnet/hdl/Projects/ultra96v2_oob/ULTRA96V2_2018_3/ultra96v2_oob.runs/ultra96v2_oob_system_management_wiz_0_0_synth_1/ultra96v2_oob_system_management_wiz_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ultra96v2_oob_system_management_wiz_0_0_utilization_synth.rpt -pb ultra96v2_oob_system_management_wiz_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 12 00:03:01 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 13 01:51:05 2020...
